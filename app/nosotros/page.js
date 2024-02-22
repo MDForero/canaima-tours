@@ -13,8 +13,8 @@ export default function page() {
                         turísticos y agroindustriales, así como la
                         historia de la región.</p>
                 </div>
-                <div className="relative  mt-10 lg:-mx-4 relative-20 lg:mt-0 lg:col-start-1">
-                    <div className="relative space-y-4">
+                <div className="relative -z-10 mt-10 lg:-mx-4  lg:mt-0 lg:col-start-1">
+                    <div classaName="relative space-y-4">
                         <div className="flex items-end justify-center space-x-4 lg:justify-start">
                             <img className="w-32 rounded-lg shadow-lg md:w-56" width="200" src="/images/IMG-20240202-WA0023.jpg" alt="1" />
                             <img className="w-40 rounded-lg shadow-lg md:w-64" width="260" src="/images/IMG-20240202-WA0017.jpg" alt="2" />
