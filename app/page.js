@@ -4,9 +4,9 @@ import { contactos } from "./data";
 export default async function Home() {
   const servicios = await fetch('http://127.0.0.1:3000/servicios.json', { cache: "no-cache" }).then(res => res.json());
   return (
-    <div>
+    <div className="space-y-32">
       <section className="max-w-4xl w-full mx-auto flex gap-12 lg:flex-nowrap flex-wrap justify-center items-center">
-        <div className="w-1/2">
+        <div className="lg:w-1/2 max-w-xl">
           <h1 className="text-green-800 font-bold  md:text-xl lg:text-3xl text-center">Nosotros</h1>
           <p className="text-justify ">Somos una empresa de turismo agroturístico
             con sede en Casanare, Colombia. Nos
@@ -37,7 +37,7 @@ export default async function Home() {
           <p className="line-clamp-3">{servicio.description}</p>
         </article>)}
       </section>
-      <section className="flex justify-center items-center md:gap-24 md:flex-row flex-col gap-16 ">
+      <section className="flex justify-center items-center md:gap-24 flex-wrap gap-16 ">
         {contactos.map(contacto => <article key={contacto.telefono}>
           <div class="group ">
             <div class=" relative rounded-2xl w-72 h-36 bg-green-800 text-green-200 flex flex-col justify-center items-center gap-1 before:-skew-x-12  before:rounded-2xl  before:absolute before:content['']  before:bg-neutral-700 before:right-3 before:top-0 before:w-72 before:h-32 before:-z-10">

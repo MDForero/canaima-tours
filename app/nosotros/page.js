@@ -2,7 +2,7 @@ export default function page() {
     return (
         <div>
             <section className="max-w-4xl w-full mx-auto flex gap-12 lg:flex-nowrap flex-wrap justify-center items-center">
-                <div className="w-1/2">
+                <div className="max-w-lg">
                     <h1 className="text-green-800 font-bold  md:text-xl lg:text-3xl text-center">Nosotros</h1>
                     <p className="text-justify ">Somos una empresa de turismo agroturístico
                         con sede en Casanare, Colombia. Nos

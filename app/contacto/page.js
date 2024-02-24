@@ -3,7 +3,7 @@ import { contactos } from "../data";
 export default function page() {
     return (
         <div className="space-y-24">
-            <section className="flex justify-center items-center md:gap-24 md:flex-row flex-col gap-16 ">
+            <section className="flex justify-center flex-wrap items-center md:gap-24 md:flex-row flex-col gap-16 ">
                 {contactos.map(contacto => <article key={contacto.telefono}>
                     <div class="group ">
                         <div class=" relative rounded-2xl w-72 h-36 bg-green-800 text-green-200 flex flex-col justify-center items-center gap-1 before:-skew-x-12  before:rounded-2xl  before:absolute before:content['']  before:bg-neutral-700 before:right-3 before:top-0 before:w-72 before:h-32 before:-z-10">
