@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import Banner from "@/components/Banner";
+import BackTopButton from "@/components/BackTopButton";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,15 +13,15 @@ export const metadata = {
 };
 const urls = [
   { name: "Inicio", url: "/" },
-  { name: "Servicios", url: "/servicios" },
-  { name: "Nosotros", url: "/nosotros" },
-  { name: "Contacto", url: "/contacto" },
-  { name: "Galería", url: "/galeria" },
+  { name: "Servicios", url: "/servicios/" },
+  { name: "Nosotros", url: "/nosotros/" },
+  { name: "Galería", url: "/galeria/" },
+  { name: "Contacto", url: "/contacto/" },
 ];
 
 export const socials = [
-  { name: "Facebook", url: "https://www.facebook.com", svg:'/svg/facebook.svg'},
-  { name: "Instagram", url: "https://www.instagram.com", svg:'/svg/instagram.svg'},
+  { name: "Facebook", url: "https://www.facebook.com/operadoracanaimatours", svg:'/svg/facebook.svg'},
+  { name: "Instagram", url: "https://www.instagram.com/canaimatours1/", svg:'/svg/instagram.svg'},
   { name: "WhatsApp", url: "https://wa.me/+573143826540", svg:'/svg/whatsapp.svg'},
 ];
 
@@ -27,7 +30,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Nav links={urls} socials={socials}/>
+        <Banner/>
         {children}
+        <BackTopButton/>
+        <Footer links={urls} socials={socials}/>
         </body>
     </html>
   );

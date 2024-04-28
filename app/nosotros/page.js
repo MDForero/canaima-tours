@@ -1,6 +1,6 @@
 export default function page() {
     return (
-        <div>
+        <div className="my-24  space-y-24">
             <section className="max-w-4xl w-full mx-auto flex gap-12 lg:flex-nowrap flex-wrap justify-center items-center">
                 <div className="max-w-lg">
                     <h1 className="text-green-800 font-bold  md:text-xl lg:text-3xl text-center">Nosotros</h1>
@@ -26,7 +26,7 @@ export default function page() {
                     </div>
                 </div>
             </section>
-            <section className="space-y-16 flex flex-col justify-center items-center md:p-8 p-2 ">
+            <section className="space-y-20 flex flex-col justify-center items-center md:p-8 p-2 ">
                 <article className="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-24 ">
                     <div className="max-w-lg lg:w-full">
                         <h2 className="font-bold text-2xl text-center text-green-800">Misión:</h2>
@@ -41,13 +41,13 @@ export default function page() {
                         <img src="/images/IMG-20240202-WA0015.jpg" className="max-w-xl w-full  lg:w-full rounded-ss-full rounded-ee-full" alt="Misión" ></img>
                     </figure>
                 </article>
-                <article className="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-24 ">
+                <article className="flex flex-col md:flex-row-reverse justify-center items-center gap-8 lg:gap-24 ">
                     <div className="max-w-lg lg:w-full">
                         <h2 className="font-bold text-2xl text-center text-green-800">Vision:</h2>
                         <p className="text-justify text-lime-700">Ser una empresa líder en el turismo agroturístico en Colombia,
                             reconocida por la calidad de sus servicios, su compromiso con el
                             desarrollo sostenible y su contribución a la preservación de la historia
-                            regiona</p>
+                            regional</p>
                     </div>
                     <figure>
                         <img src="/images/IMG-20240202-WA0015.jpg" className="max-w-xl w-full  lg:w-full rounded-ss-full rounded-ee-full" alt="Misión" ></img>
